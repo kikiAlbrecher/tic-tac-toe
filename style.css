@@ -1,0 +1,50 @@
+body {
+    background-color: #323232; /* Hintergrundfarbe der gesamten Seite */
+    font-family: 'Open Sans', sans-serif; /* Schriftart */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Entfernt den Standard-Margin */
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse; /* Verhindert Abstände zwischen den Zellen */
+    border: none; /* Entfernt den äußeren Rahmen der Tabelle */
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+    border: 5px solid white; /* Dicke der inneren Trennlinie */
+}
+
+/* Optional: Entfernt auch Ränder der Zellen, um sicherzustellen, dass nichts außerhalb sichtbar ist */
+tr:first-child td {
+    border-top: none; /* Entfernt obere äußere Linie der ersten Zeile */
+}
+
+tr:last-child td {
+    border-bottom: none; /* Entfernt untere äußere Linie der letzten Zeile */
+}
+
+td:first-child {
+    border-left: none; /* Entfernt linke äußere Linie der ersten Spalte */
+}
+
+td:last-child {
+    border-right: none; /* Entfernt rechte äußere Linie der letzten Spalte */
+}
+
+td:hover {
+    background-color: #e0e0e0; /* Hover-Effekt */
+}
