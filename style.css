@@ -17,6 +17,7 @@ h1 {
 table {
     border-collapse: collapse; /* Verhindert Abstände zwischen den Zellen */
     border: none; /* Entfernt den äußeren Rahmen der Tabelle */
+    margin: 20px 0;
 }
 
 td {
@@ -46,5 +47,28 @@ td:last-child {
 }
 
 td:hover {
-    background-color: #e0e0e0; /* Hover-Effekt */
+    background-color: rgba(255, 255, 255, 0.4); /* Hover-Effekt */
+}
+
+#status {
+    margin-bottom: 10px; /* Abstand zwischen Status und Tabelle */
+}
+
+#content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.reset_button {
+    background-color: orange; 
+    padding: 10px 20px; 
+    font-size: 16px;
+}
+
+.reset_button:hover {
+    cursor:pointer;
+    background-color: rgb(255, 197, 90); 
 }
